@@ -4,6 +4,18 @@
 .catalog-container {
     width: 768px;
 }
+/* .catalog-item>img {
+    padding: 43px 30px;
+} */
+.catalog-button {
+    height: 50px;
+    width: 122px;
+    margin: 40px 646px 0;
+    padding: 18px 35px;
+}
+.catalog-title {
+    margin-left: 40px;
+}
 }
 
 /* ================1280px============== */
@@ -22,7 +34,21 @@
         width: 276px;
         height: 375px;
     }
+        .catalog-item>img {
+            margin: auto;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .catalog-paragraph {
+            margin-top: 14px;
+        }
     .catalog-desktop {
         display: contents;
     }
+
+        .catalog-button {
+            width: 122px;
+            margin: 40px 1158px 0;
+        }
 }

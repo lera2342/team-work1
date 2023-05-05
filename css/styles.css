@@ -24,6 +24,7 @@ img {
     padding-bottom: 80px;
     width: 375px;
     margin: 0 auto;
+    height: auto;
 }
 
 .catalog-title {
@@ -44,6 +45,8 @@ img {
 }
 .catalog-item >img {
     margin: auto;
+    padding-top: 43px;
+    padding-bottom: 43px;
 }
 
 .catalog-item {
@@ -56,8 +59,7 @@ img {
 }
 
 .catalog-paragraph {
-    margin-top: 57px;
-    margin-bottom: 4px;
+    margin-top: 14px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -77,24 +79,25 @@ img {
     display: none;
 }
 
-.catalog-container >.catalog-button {
+.catalog-button {
+    background: #1E2827;
+    border-radius: 8px;
+    height: 42px;
+    width: 108px;
+    padding: 14px 28px;
+    color: #FFFFFF;
     font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-
-        position: absolute;
-        width: 108px;
-        height: 42px;
-        background: #1E2827;
-        border-radius: 8px;
-        border: 0px;
-        cursor: pointer;
-        /* display: block; */
-        margin-top: 40px;
-        /* right: 31%; */
+    font-size: 10px;
+    line-height: 1.17;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 268px 0;
+}
+.catalog-container .catalog-button {
+    position: relative;
+    right: 0px;
 }
 
 .catalog-cover-text {
