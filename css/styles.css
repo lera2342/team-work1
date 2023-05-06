@@ -139,23 +139,11 @@ background: #1E2827;
     justify-content: center;
     align-items: center;
     margin: 40px 268px 0;
+    cursor: pointer;
 }
 .catalog-container .catalog-button {
     position: relative;
     right: 0px;
-}
-
-.backdrop-catalog {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop-catalog.is-hidden .modal {
-    transform: translate(-50%, -50%) scaleY(0);
 }
 
 #mdiv {
@@ -166,7 +154,7 @@ background: #1E2827;
 
 .mdiv {
     height: 20px;
-    width: 2px;
+    width: 1.5px;
     background-color: black;
     transform: rotate(45deg);
     Z-index: 1;
@@ -174,8 +162,155 @@ background: #1E2827;
 
 .md {
     height: 20px;
-    width: 2px;
+    width: 1.5px;
     background-color: black;
     transform: rotate(90deg);
     Z-index: 2;
+}
+
+.backdrop-catalog {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 200ms linear, visibility 200ms linear;
+    /* background-color: rgba(23, 26, 36, 0.432); */
+}
+.backdrop-catalog.is-hidden .modal-catalog {
+    transform: scaleX(0);
+}
+.modal-catalog {
+    width: 335px;
+    height: 1073px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+    
+    transform: scale(1);
+    transition: transform 200ms linear;
+}
+.modal-btn-catalog {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-catalog-jpg > img {
+    top: 66px;
+    position: relative;
+    left: 9%;
+}
+.modal-title-catalog {
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+        color: #141414;
+        text-align: center;
+        position: relative;
+        padding-top: 100px;
+}
+.catalog-price-modal {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+        color: rgba(20, 20, 20, 0.5);
+        position: relative;
+        left: 38px;
+}
+.modal-form-catalog {
+    margin-top: 40px;
+    padding-left: 20px;
+        padding-right: 20px;
+}
+.modal-input-catalog {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(20, 20, 20, 0.5);
+    border-radius: 8px;
+    padding-left: 16px;
+}
+.modal-input-catalog:placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+}
+.modal-input-catalog:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.modal-label-catalog {
+    display: block;
+        margin-bottom: 12px;
+        margin-top: 18px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+        color: #141414;
+}
+.modal-label-catalog span {
+    display: block;
+    margin-bottom: 12px;
+    margin-top: 18px;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+        color: #141414;
+}
+.modal-textarea-catalog {
+    width: 100%;
+    height: 170px;
+    border: 1px solid rgba(20, 20, 20, 0.5);
+    border-radius: 8px;
+    outline: transparent;
+    padding: 12px 16px;
+    resize: none;
+}
+.modal-textarea-catalog:placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.5);
+}
+.btn-submit-catalog {
+    background: #1E2827;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    font-weight: 400;
+        line-height: 1.17;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+.paragraph-modal-catalog {
+    margin-top: 12px;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.02em;
+        color: rgba(20, 20, 20, 0.4);
 }

@@ -240,24 +240,43 @@
     </div>
     </ul>
 
-    <!-- <div class="backdrop-catalog is-hidden" data-modal>
-        <div class="modal-catalog">
-            <button type="button" id="mdiv" data-modal-close>
+        <button type="button" data-modal-open class="catalog-button">BUY NOW</button>
+        <div class="backdrop-catalog is-hidden" data-modal>
+            <div class="modal-catalog">
+            <button type="button" class="modal-btn-catalog" id="mdiv" data-modal-close>
                 <div class="mdiv">
                     <div class="md"></div>
                 </div>
-            </button>
+            </button> 
+            <div class="modal-catalog-jpg">
+            <img srcset="./images/clock1-2x-squoosh.jpg 2x" src="./images/clock1-squoosh.jpg" alt="catalog-photo" width="275">
+            <h3 class="modal-title-catalog">Tube Watch S42 Date Steel With Black Case</h3>
+            <span class="catalog-price-modal">€395</span>
         </div>
-    <button type="button" class="catalog-button" data-modal-open>BUY NOW</button>
-    <div class="portfolio-cover-wrap">
-        <img srcset="./images/clock1-2x-squoosh.jpg 2x" src="./images/clock1-squoosh.jpg" alt="catalog-photo" width="275">
-        <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
-            Tracker
-            App · Exotic Fruit Ecommerce App ·
-            Cloud Storage App</p>
-    </div>
-    </div> -->
-        <button type="button" class="catalog-button">BUY NOW</button
+        <form class="modal-form-catalog">
+            <label class="modal-label-catalog">
+                <span>Full name</span>
+            <input type="text" name="user-full-name" class="modal-input-catalog" placeholder="Enter your full name" required></label>
+            <label class="modal-label-catalog">
+                <span>Email</span>
+            <input type="email" name="user-email" class="modal-input-catalog" placeholder="Enter your email" required></label>
+            <label class="modal-label-catalog">
+                <span>Card number</span>
+            <input type="text" name="user-card-number" class="modal-input-catalog" placeholder="Enter card" required></label>
+            <div class="modal-field-catalog">
+                <label class="modal-label-catalog" for="user-text">Comments</label>
+                <textarea name="user-text" id="user-text" class="modal-textarea-catalog" placeholder="Enter your text"></textarea>
+            </div>
+            <button type="submit" class="btn-submit-catalog">SUBMIT</button>
+            <p class="paragraph-modal-catalog">By clicking on “Submit” button, you agree to our Privacy Policy, and allow Promodo to use this information for marketing
+            purposes.</p>
+        </form>
+            </div>
+        </div>
 </div>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
