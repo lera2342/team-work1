@@ -4,9 +4,6 @@
 .catalog-container {
     width: 768px;
 }
-/* .catalog-item>img {
-    padding: 43px 30px;
-} */
 .catalog-button {
     height: 50px;
     width: 122px;
@@ -38,6 +35,16 @@
             margin: auto;
             padding-top: 25px;
             padding-bottom: 25px;
+        }
+        .catalog-cover-text {
+            padding: 26px 20px;
+        }
+        .catalog-cover-text>h3:not(:first-child) {
+            padding-top: 26px;
+                }
+        .catalog-item > .catalog-cover-text {
+            width: 276px;
+            height: 325px;
         }
 
         .catalog-paragraph {
