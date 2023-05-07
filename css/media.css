@@ -1,20 +1,19 @@
 /* ================768px============== */
 
 @media screen and (min-width: 768px) {
-.catalog-container {
+.catalog-section {
     width: 768px;
 }
 .catalog-button {
     height: 50px;
     width: 122px;
     margin: 40px 646px 0;
-    padding: 18px 35px;
 }
 .catalog-title {
     margin-left: 40px;
 }
 
-.modal-catalog {
+/* .modal-catalog {
     width: 744px;
     height: 670px;
 }
@@ -38,12 +37,13 @@
 }
 .modal-label-catalog>span:not(:first-child) {
     margin-top: 18px;
+} */
 }
 
 /* ================1280px============== */
 
 @media screen and (min-width: 1280px) {
-    .catalog-container {
+    .catalog-section {
         width: 1280px;
     }
 
@@ -90,7 +90,7 @@
             width: 122px;
             margin: 40px 1158px 0;
         }
-        .modal-catalog {
+        /* .modal-catalog {
             width: 904px;
             height: 694px;
             left: 13%;
@@ -98,5 +98,5 @@
         .modal-form-catalog {
             width: 508px;
                 height: 614px;
-        }
+        } */
     }
